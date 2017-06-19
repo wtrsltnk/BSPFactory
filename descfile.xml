@@ -1,0 +1,73 @@
+<root>
+	<userlevel>
+		<level>1</level>
+		<name>N00b</name>
+	</userlevel>
+	<userlevel>
+		<level>2</level>
+		<name>newbie</name>
+	</userlevel>
+	<userlevel>
+		<level>3</level>
+		<name>leet</name>
+	</userlevel>
+	<setting>
+		<name>WADROOT</name>
+	</setting>
+	<tooldescription>
+		<toolname>HL CSG</toolname>
+		<filename>hlcsg.exe</filename>
+		<option>
+			<id>1</id>
+			<optionname>Geen wadtextures</optionname>
+			<callname>-nowadtextures</callname>
+			<defaultvalue>ja</defaultvalue>
+			<optiondescription>Als je dit toevoegd, heb je geen wad files meer nodig</optiondescription>
+			<userlevel>2</userlevel>
+			<type>1</type>
+		</option>
+		<option>
+			<id>2</id>
+			<optionname>Uhm...</optionname>
+			<callname>-test</callname>
+			<defaultvalue>ja</defaultvalue>
+			<optiondescription>Als je dit toevoegd, heb je geen wad files meer nodig</optiondescription>
+			<userlevel>1</userlevel>
+			<type>4</type>
+			<enums>
+				<item>Ja</item>
+				<item>Nee</item>
+				<item>Misschien</item>
+			</enums>
+		</option>
+		<userlevel></userlevel>
+	</tooldescription>
+	<tooldescription>
+		<toolname>HL BSP</toolname>
+		<filename>hlbsp.exe</filename>
+		<option>
+			<id>1</id>
+			<optionname>Uhm...</optionname>
+			<callname>-nowadtextures</callname>
+			<defaultvalue>ja</defaultvalue>
+			<optiondescription>Als je dit toevoegd, heb je geen wad files meer nodig</optiondescription>
+			<userlevel>1</userlevel>
+			<type>4</type>
+			<enums>
+				<item>Ja</item>
+				<item>Nee</item>
+				<item>Misschien</item>
+			</enums>
+		</option>
+		<option>
+			<id>2</id>
+			<optionname>Test</optionname>
+			<callname>-nowadtextures</callname>
+			<defaultvalue>ja</defaultvalue>
+			<optiondescription>Als je dit toevoegd, heb je geen wad files meer nodig</optiondescription>
+			<userlevel>1</userlevel>
+			<type>2</type>
+		</option>
+		<userlevel></userlevel>
+	</tooldescription>
+</root>

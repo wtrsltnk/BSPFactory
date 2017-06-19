@@ -1,0 +1,252 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG DIALOGEX 0, 0, 205, 196
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Call configuration:",IDC_CONFIG,7,7,191,182
+    LTEXT           "Location:",IDC_LBL_LOCATION,12,60,115,10
+    EDITTEXT        IDC_LOCATION,12,70,150,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "...",IDC_BTN_LOCATION,168,70,25,12
+    LTEXT           "Toolname:",IDC_LBL_TOOLNAME,12,20,42,10
+    LTEXT           "Flename:",IDC_LBL_FILENAME,12,40,50,10
+    LISTBOX         IDC_PARAMS,12,100,150,59,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    NOT WS_BORDER | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    PUSHBUTTON      "+",IDC_PLUS_PARAMS,168,100,25,12
+    PUSHBUTTON      "-",IDC_MIN_PARAMS,168,120,25,12
+    LTEXT           "Value:",IDC_LBL_VALUE,12,170,21,10,NOT WS_VISIBLE
+    EDITTEXT        IDC_VAL_TEXT,48,170,113,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | NOT WS_BORDER,WS_EX_STATICEDGE
+    COMBOBOX        IDC_VAL_ENUM,48,170,114,56,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "save",IDC_VAL_TEXT_SAVE,167,170,25,12,NOT WS_VISIBLE
+    EDITTEXT        IDC_TOOLNAME,93,20,100,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_FILENAME,93,40,100,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_BUILDMAP DIALOGEX 0, 0, 205, 55
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_BUILDMAP,12,29,148,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "...",IDC_BUILDMAP_OPEN,167,29,25,13
+    GROUPBOX        "File properties:",IDC_STATIC,7,6,191,42
+    LTEXT           "Editor file:",IDC_STATIC,13,18,46,9
+END
+
+IDD_OPTIONINFO DIALOGEX 0, 0, 349, 249
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Option information"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,292,228,50,14
+    LISTBOX         IDC_OPTIONS,7,7,152,235,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    NOT WS_BORDER | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "Type:",IDC_STATIC,172,27,40,10
+    LTEXT           "Name:",IDC_STATIC,172,7,40,10
+    EDITTEXT        IDC_OPT_NAME,222,7,120,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_OPT_TYPE,222,27,120,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Call:",IDC_STATIC,172,47,40,10
+    EDITTEXT        IDC_OPT_CALL,222,47,120,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Default:",IDC_STATIC,172,67,40,10
+    EDITTEXT        IDC_OPT_DEFAULT,222,67,120,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Description:",IDC_STATIC,172,107,40,10
+    EDITTEXT        IDC_OPT_DESCRIPTION,172,120,170,40,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER | 
+                    WS_VSCROLL,WS_EX_STATICEDGE
+    LTEXT           "Possible enum values:",IDC_STATIC,172,167,170,10
+    EDITTEXT        IDC_OPT_ENUMS,172,180,170,40,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_OEMCONVERT | ES_READONLY | NOT 
+                    WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+    LTEXT           "Userlevel:",IDC_STATIC,172,87,40,10
+    EDITTEXT        IDC_OPT_USERLEVEL,222,87,120,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 127, 55
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,70,34,50,14
+    LTEXT           "BSP Factory(c) by Wouter Saaltink",IDC_STATIC,7,7,113,8
+    CONTROL         116,IDC_STATIC,"Static",SS_BITMAP,7,18,27,30
+END
+
+IDD_INPUT DIALOG DISCARDABLE  0, 0, 269, 28
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Input"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,192,7,31,14
+    PUSHBUTTON      "Cancel",IDCANCEL,232,7,30,14
+    EDITTEXT        IDC_INPUT,7,7,174,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_BUILDMAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_OPTIONINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 342
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_INPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 21
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_NANO                ICON    DISCARDABLE     "nano.ico"
+IDI_NANO2               ICON    DISCARDABLE     "nano2.ico"
+IDI_NANO3               ICON    DISCARDABLE     "nano3.ico"
+IDI_NANO6               ICON    DISCARDABLE     "nano6.ico"
+IDI_NANO5               ICON    DISCARDABLE     "nano5.ico"
+IDI_NANO4               ICON    DISCARDABLE     "nano4.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Userlevels"
+    BEGIN
+        MENUITEM "Information...",              ID_USERLEVELS_INFORMATION
+        MENUITEM SEPARATOR
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About",                       ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_NANO                BITMAP  DISCARDABLE     "nano.bmp"
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
