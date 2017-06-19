@@ -7,10 +7,11 @@ int APIENTRY WinMain(HINSTANCE hInstance,
                      LPSTR     lpCmdLine,
                      int       nCmdShow)
 {
-	Factory::CApplication app;
+    Factory::CApplication app;
 
-	if (!app.Create())
-		return 0;
+    if (!app.Create())
+        return 0;
 	
-	return app.Run();
+    return app.Run();
+    return 0;
 }

@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.1)
 
 project(BSPFactory)
 
+add_subdirectory(ControlLib)
+
 set(SRC_APP
     AboutDlg.cpp
     ApplicationProc.cpp
@@ -41,6 +43,7 @@ set(SRC_APP
     OptionDescription.h
     Param.h
     resource.h
+    resource.rc
     Setting.h
     SettingVal.h
     Tool.h
@@ -48,14 +51,12 @@ set(SRC_APP
     XMLParser.h
     )
 
-link_directories(../ControlLib/package/lib)
-
 add_executable(BSPFactory
     ${SRC_APP}
 	)
 
 target_include_directories(BSPFactory
-    PRIVATE ../ControlLib/package/include
+    PRIVATE ControlLib/package/include
     )
 
 target_compile_features(BSPFactory
