@@ -5,6 +5,7 @@ project(BSPFactory)
 add_subdirectory(ControlLib)
 
 set(SRC_APP
+    README.md
     AboutDlg.cpp
     ApplicationProc.cpp
     BuildMap.cpp
